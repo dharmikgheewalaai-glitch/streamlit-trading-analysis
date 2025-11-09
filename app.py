@@ -7,7 +7,7 @@ from scripts.backtest import backtest
 
 st.title("📊 Research Bot for Long Trades")
 
-symbol = st.text_input("Enter Symbol", "^NSEI")
+symbol = st.text_input("Enter Symbol")
 period = st.selectbox("Select Period", ["1mo","3mo","6mo","1y"])
 interval = st.selectbox("Select Interval", ["15m","1h","1d"])  # safer intervals
 
