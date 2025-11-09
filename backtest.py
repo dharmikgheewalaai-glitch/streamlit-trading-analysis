@@ -1,12 +1,17 @@
-import pandas as pd
+import sys
 import os
-from strategy.strategies import MA_Crossover, RSI_MA_Combo, BreakoutStrategy
+import pandas as pd
 import yaml
 
 # =====================
-# File paths
+# Set project root for imports
 # =====================
 BASE_DIR = r"C:\Users\Acer\OneDrive\Desktop\AURA\Tracker"
+sys.path.append(BASE_DIR)
+
+from strategy.strategies import MA_Crossover, RSI_MA_Combo, BreakoutStrategy
+
+# File paths
 CONFIG_FILE = os.path.join(BASE_DIR, "config.yaml")
 SAMPLE_DATA_FILE = os.path.join(BASE_DIR, "data", "sample_data.csv")
 
